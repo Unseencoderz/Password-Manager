@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Password Manager App
+        </div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Your Password History</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Website</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="passwordTable">
+                <!-- Password entries will be added here dynamically -->
+            </tbody>
+        </table>
+        <h1>Save Your Password Details</h1>
+        <form id="passwordForm">
+            <div class="form-label">
+                <label for="Website">Website</label>
+                <input type="text" name="Website" id="Website" required>
+            </div>
+            <div class="form-label">
+                <label for="Username">Username</label>
+                <input type="text" name="Username" id="Username" required>
+            </div>
+            <div class="form-label">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button class="btn" type="submit">Save</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
