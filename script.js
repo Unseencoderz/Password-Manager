@@ -65,18 +65,3 @@ function deletePasswordEntry(deleteButton) {
     }
     alert("Confirm to delete Password!");
 }
-
-function copyPasswordToClipboard(copyButton) {
-    const passwordElement = copyButton.parentElement.previousElementSibling.querySelector(".password-hidden");
-
-    const passwordText = passwordElement.textContent;
-
-    const textArea = document.createElement("textarea");
-    textArea.value = passwordText;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textArea);
-
-    alert("Password copied to clipboard!");
-}
